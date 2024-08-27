@@ -1,0 +1,6 @@
+
+
+
+'''bash
+pip install django
+'''
