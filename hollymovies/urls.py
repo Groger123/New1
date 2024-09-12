@@ -53,8 +53,7 @@ urlpatterns = [
 
     path('creators/actor/', CreatorsListViewActor.as_view(), name='creator_actor'),
     path('creators/director/', CreatorsListViewDirector.as_view(), name='creator_director'),
-
-    path('creators/all/', CreatorsListViewAll.as_view(), name='creator_all'),
+    path('creators/all/', CreatorsListView.as_view(), name='creator_all'),
 
 
 

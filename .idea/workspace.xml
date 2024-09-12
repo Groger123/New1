@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64038b58-016b-4be9-8e83-e2980865b284" name="Changes" comment="je to tam">
-      <change beforePath="$PROJECT_DIR$/viewer/templates/creators.html" beforeDir="false" afterPath="$PROJECT_DIR$/viewer/templates/creators.html" afterDir="false" />
+    <list default="true" id="64038b58-016b-4be9-8e83-e2980865b284" name="Changes" comment="Mazací tlačítko pro tvůrce v seznamu všichni">
+      <change beforePath="$PROJECT_DIR$/hollymovies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hollymovies/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +31,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Groger123"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Groger123/New1.git",
+    "accountId": "a3eafdf5-54b4-4dfc-bc5b-635b5e6c7cec"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -131,6 +143,15 @@
       <workItem from="1726036001077" duration="18872000" />
       <workItem from="1726122772679" duration="7580000" />
     </task>
+    <task id="LOCAL-00001" summary="Mazací tlačítko pro tvůrce v seznamu všichni">
+      <option name="closed" value="true" />
+      <created>1726150257025</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726150257025</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +192,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="je to tam" />
-    <option name="LAST_COMMIT_MESSAGE" value="je to tam" />
+    <MESSAGE value="Mazací tlačítko pro tvůrce v seznamu všichni" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mazací tlačítko pro tvůrce v seznamu všichni" />
   </component>
 </project>
