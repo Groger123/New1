@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64038b58-016b-4be9-8e83-e2980865b284" name="Changes" comment="Mazací tlačítko pro tvůrce v seznamu všichni">
+    <list default="true" id="64038b58-016b-4be9-8e83-e2980865b284" name="Changes" comment="oprava seznamu tvůrci">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hollymovies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hollymovies/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viewer/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/viewer/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viewer/templates/creator.html" beforeDir="false" afterPath="$PROJECT_DIR$/viewer/templates/creator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viewer/templates/creators.html" beforeDir="false" afterPath="$PROJECT_DIR$/viewer/templates/creators.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726150257025</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="oprava seznamu tvůrci">
+      <option name="closed" value="true" />
+      <created>1726150596577</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726150596577</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +206,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="je to tam" />
     <MESSAGE value="Mazací tlačítko pro tvůrce v seznamu všichni" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mazací tlačítko pro tvůrce v seznamu všichni" />
+    <MESSAGE value="oprava seznamu tvůrci" />
+    <option name="LAST_COMMIT_MESSAGE" value="oprava seznamu tvůrci" />
   </component>
 </project>

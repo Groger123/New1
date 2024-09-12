@@ -42,6 +42,12 @@ urlpatterns = [
     path('creator/delete/<pk>/', CreatorDeleteView.as_view(), name='creator_delete'),
 
 
+    path('movie/create/', CreatorCreateView.as_view(), name='movie_create'),
+
+
+
+
+
 
 
     path('creator/<pk>/', creator, name='creator'),

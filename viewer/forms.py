@@ -1,9 +1,10 @@
 from datetime import date
 
 from django.core.exceptions import ValidationError
+from django.db.models import ManyToManyField, IntegerField
 from django.forms import Form, CharField, DateField, ModelChoiceField, Textarea, ModelForm, NumberInput
 
-from viewer.models import Country, Creator
+from viewer.models import Country, Creator, Genre
 
 
 class CreatorForm(Form):
@@ -80,3 +81,16 @@ class CreatorModelForm(ModelForm):
         if len(name.strip()) == 0 and len(surname.strip()) == 0:
             raise ValidationError('Je potřeba zadat jméno nebo příjmení')
         # TODO: pokud jsou zadaná data narození a úmrtí, tak datum narození musí být < datum úmrtí
+
+
+class MovieForm(Form):
+    Jméno = CharField(max_length=32, required=False)
+    Žánry = ManyToManyField(Genre)
+    Země = ManyToManyField(Country)
+    Režije = ManyToManyField(Creator)
+    Hrají = ManyToManyField(Creator)
+    Délka = IntegerField()
+    Rok = IntegerField()
+    Hodnocení = IntegerField()
+    biography = CharField(widget=Textarea, required=False)
+
