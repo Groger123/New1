@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+    Filtrdle povolání: <a href="{% url 'creator_all' %}">Všichni</a>
+    <a href="{% url 'creator_actor' %}">Herci</a>
+    <a href="{% url 'creator_director' %}">Režiséři</a>
+
+
+    <h1>Herci</h1>
+        <ul>
+        {% for creator in actors %}
+            <li><a href="{% url 'creator' creator.id %}">{{ creator }}</a></li>
+        {% endfor %}
+        </ul>
+
+    <h1>Režiséři</h1>
+        <ul>
+        {% for creator in directors %}
+            <li><a href="{% url 'creator' creator.id %}">{{ creator }}</a></li>
+        {% endfor %}
+        </ul>
+
+    <h1>Všichni</h1>
+        <ul>
+        {% for creator in allof %}
+            <li><a href="{% url 'creator' creator.id %}">{{ creator }}</a><a href="{%  url 'creator_update' creator.id %}">🔧</a></li>
+        {% endfor %}
+        </ul>
+{% endblock %}
