@@ -24,9 +24,9 @@ urlpatterns = [
 
     path('', home, name='home'),
 
-
     path('movie/create/', MovieCreateView.as_view(), name='movie_create'),
-    path('creator/delete/<pk>/', MovieDeleteView.as_view(), name='movie_delete'),
+    path('creator/create/', CreatorCreateView.as_view(), name='creator_create'),
+
 
     #path('movies/', movies, name='movies'),
     #path('movies/', MoviesView.as_view(), name='movies'),
@@ -40,8 +40,10 @@ urlpatterns = [
     path('creators/', CreatorsListView.as_view(), name='creators'),
 
 
+    path('movie/update/<pk>/', MovieUpdateView.as_view(), name='movie_update'),
+    path('movie/delete/<pk>/', MovieDeleteView.as_view(), name='movie_delete'),
 
-    path('creator/create/', CreatorCreateView.as_view(), name='creator_create'),
+
 
     path('creator/update/<pk>/', CreatorUpdateView.as_view(), name='creator_update'),
     path('creator/delete/<pk>/', CreatorDeleteView.as_view(), name='creator_delete'),
