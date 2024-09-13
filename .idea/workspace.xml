@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64038b58-016b-4be9-8e83-e2980865b284" name="Changes" comment="Formulář filmy">
+    <list default="true" id="64038b58-016b-4be9-8e83-e2980865b284" name="Changes" comment="Mazání filmů">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hollymovies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hollymovies/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viewer/templates/movies.html" beforeDir="false" afterPath="$PROJECT_DIR$/viewer/templates/movies.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +143,7 @@
       <workItem from="1725947671154" duration="28011000" />
       <workItem from="1726036001077" duration="18872000" />
       <workItem from="1726122772679" duration="7580000" />
-      <workItem from="1726209103823" duration="21953000" />
+      <workItem from="1726209103823" duration="23095000" />
     </task>
     <task id="LOCAL-00001" summary="Mazací tlačítko pro tvůrce v seznamu všichni">
       <option name="closed" value="true" />
@@ -178,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726242611699</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Mazání filmů">
+      <option name="closed" value="true" />
+      <created>1726244520961</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726244520961</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +230,8 @@
     <MESSAGE value="oprava seznamu tvůrci" />
     <MESSAGE value="Autorizace a rozdělání tabulky filmů" />
     <MESSAGE value="Formulář filmy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Formulář filmy" />
+    <MESSAGE value="Mazání filmů" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mazání filmů" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
