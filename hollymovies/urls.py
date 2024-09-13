@@ -24,6 +24,10 @@ urlpatterns = [
 
     path('', home, name='home'),
 
+
+    path('movie/create/', MovieCreateView.as_view(), name='movie_create'),
+    path('creator/delete/<pk>/', MovieDeleteView.as_view(), name='movie_delete'),
+
     #path('movies/', movies, name='movies'),
     #path('movies/', MoviesView.as_view(), name='movies'),
     #path('movies/', MoviesTemplateView.as_view(), name='movies'),
@@ -38,11 +42,15 @@ urlpatterns = [
 
 
     path('creator/create/', CreatorCreateView.as_view(), name='creator_create'),
+
     path('creator/update/<pk>/', CreatorUpdateView.as_view(), name='creator_update'),
     path('creator/delete/<pk>/', CreatorDeleteView.as_view(), name='creator_delete'),
 
 
-    path('movie/create/', CreatorCreateView.as_view(), name='movie_create'),
+
+    #path('movie/update/<pk>/', CreatorUpdateView.as_view(), name='movie_update'),
+    #path('movie/delete/<pk>/', CreatorDeleteView.as_view(), name='movie_delete'),
+
 
 
 
