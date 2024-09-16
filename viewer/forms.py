@@ -4,7 +4,8 @@ from django.core.exceptions import ValidationError
 from django.db.models import ManyToManyField, IntegerField
 from django.forms import Form, CharField, DateField, ModelChoiceField, Textarea, ModelForm, NumberInput
 
-from viewer.models import Country, Creator, Genre
+from viewer.models import Country, Creator, Genre, Movie
+
 
 class CreatorForm(Form):
     name = CharField(max_length=32, required=False)
@@ -82,19 +83,18 @@ class CreatorModelForm(ModelForm):
         # TODO: pokud jsou zadaná data narození a úmrtí, tak datum narození musí být < datum úmrtí
 
 
-class MovieForm(Form):
+"""class MovieForm(Form):
     title_orig = CharField(max_length=150, required=False)
     title_cz = CharField(max_length=150, required=False)
     genres = ModelChoiceField(queryset=Genre.objects)
     countries = ModelChoiceField(queryset=Country.objects)
     actors = ModelChoiceField(queryset=Creator.objects)
     directors = ModelChoiceField(queryset=Creator.objects)
-    length = CharField(max_length=150, required=False)
+    length = IntegerField()
     released = CharField(max_length=150, required=False)
     description = CharField(widget=Textarea, required=False)
     rating = CharField(max_length=150, required=False)
-    created = DateField(required=False, widget=NumberInput(attrs={'type': 'date'}))
-    updated = DateField(required=False, widget=NumberInput(attrs={'type': 'date'}))
+
 
     def clean_title_orig(self):
         initial = self.cleaned_data['title_orig']
@@ -103,14 +103,15 @@ class MovieForm(Form):
             result = result.capitalize()
         return result
 
-    def validate(self, value):
-        super().validate(value)
-        if value and value >= date.today():
-            raise ValidationError('jojo chyba')
-
     def validate(self):
         titlecz = super().cleaned_data['title_cz']
         titleorig = super().cleaned_data['title_orig']
         if len(titlecz.strip()) == 0 and len(titleorig.strip()) == 0:
             raise ValidationError("Je potřeba zadat jméno nebo přijmení")
-
+"""
+class MovieModelForm(ModelForm):
+    class Meta:
+        model = Movie
+        fields = '__all__'
+        #fields = ['surname', 'name', 'date_of_birth', 'date_of_death']
+        #exclude = ['date_of_death', 'name']

@@ -5,8 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64038b58-016b-4be9-8e83-e2980865b284" name="Changes" comment="Mazání filmů">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actors.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countries.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/erd.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/erd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/erd_viewer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viewer/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viewer/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viewer/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viewer/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viewer/migrations/0002_alter_genre_name.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viewer/migrations/0003_creator_created_creator_updated.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viewer/migrations/0004_alter_creator_date_of_death.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viewer/migrations/0005_alter_creator_options_alter_creator_country_of_birth_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viewer/migrations/0006_creator_released.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viewer/migrations/0007_remove_creator_released_movie_released.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viewer/migrations/0008_alter_country_options_alter_genre_options_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viewer/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viewer/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viewer/templates/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viewer/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viewer/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hollymovies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hollymovies/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viewer/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/viewer/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viewer/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/viewer/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +168,15 @@
       <workItem from="1725947671154" duration="28011000" />
       <workItem from="1726036001077" duration="18872000" />
       <workItem from="1726122772679" duration="7580000" />
-      <workItem from="1726209103823" duration="23095000" />
+      <workItem from="1726209103823" duration="23102000" />
+      <workItem from="1726245840668" duration="1358000" />
+      <workItem from="1726319644436" duration="1726000" />
+      <workItem from="1726331360559" duration="3077000" />
+      <workItem from="1726391216352" duration="6000" />
+      <workItem from="1726401648547" duration="598000" />
+      <workItem from="1726416988660" duration="5000" />
+      <workItem from="1726419076190" duration="953000" />
+      <workItem from="1726466231537" duration="2182000" />
     </task>
     <task id="LOCAL-00001" summary="Mazací tlačítko pro tvůrce v seznamu všichni">
       <option name="closed" value="true" />
@@ -185,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726244520961</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Mazání filmů">
+      <option name="closed" value="true" />
+      <created>1726245669996</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1726245669997</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +281,11 @@
           <url>file://$PROJECT_DIR$/viewer/models.py</url>
           <line>77</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/viewer/forms.py</url>
+          <line>111</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

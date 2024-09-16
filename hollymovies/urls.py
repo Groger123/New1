@@ -21,7 +21,6 @@ from viewer.views import *
 
 urlpatterns = [
 
-    path('movie/update/<pk>/', MovieUpdateView.as_view(), name='movie_update'),
     path('admin/', admin.site.urls, name='admin'),
 
     path('', home, name='home'),
@@ -34,7 +33,7 @@ urlpatterns = [
     #path('movies/', MoviesView.as_view(), name='movies'),
     #path('movies/', MoviesTemplateView.as_view(), name='movies'),
     path('movies/', MoviesListView.as_view(), name='movies'),
-    path('movie/<pk>/', movie, name='movie'),
+
 
     #path('creators/', creators, name='creators'),
     #path('creators/', CreatorsView.as_view(), name='creators'),
@@ -42,11 +41,12 @@ urlpatterns = [
     path('creators/', CreatorsListView.as_view(), name='creators'),
 
     path('movie/create/', MovieCreateView.as_view(), name='movie_create'),
-
+    path('movie/update/<pk>/', MovieUpdateView.as_view(), name='movie_update'),
     path('movie/delete/<pk>/', MovieDeleteView.as_view(), name='movie_delete'),
 
-    path('creator/create/', CreatorCreateView.as_view(), name='creator_create'),
+    path('movie/<pk>/', movie, name='movie'),
 
+    path('creator/create/', CreatorCreateView.as_view(), name='creator_create'),
     path('creator/update/<pk>/', CreatorUpdateView.as_view(), name='creator_update'),
     path('creator/delete/<pk>/', CreatorDeleteView.as_view(), name='creator_delete'),
 

@@ -2,4 +2,9 @@
 
 {% block content %}
 <h1>Vítejte v naší HollyMovie databázi.</h1>
+    {% for re in retard %}
+        <li>
+        {{ re }} {{ form }}
+        </li>
+    {% endfor %}
 {% endblock %}
